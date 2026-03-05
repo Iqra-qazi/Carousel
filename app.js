@@ -1,26 +1,28 @@
-var cakes = [
-  "https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/easy_chocolate_cake_31070_16x9.jpg",
-  "https://images.getrecipekit.com/20250520143332-coffee-20and-20walnut-20cake-20recipe-20uk.png",
-  "https://www.foodandwine.com/thmb/d894lH2RTu6tJoR0N78hSkXXy2g=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/maria-cookies-icebox-cake-FT-RECIPE0521-4089012694154e40a90e368863e4fa08.jpg"
+var burgers = [
+    "https://assets.indolj.io/upload/1689181728-duo%20signature%20deal.jpg",
+    "https://texasburgers.businesswala.pk/assets/uploads/1179_d2360cb6352d6f58e1c8ea6ffc62fa26.png",
+    "https://rancherscafe.com/_next/image?url=https%3A%2F%2Fstatic.rancherscafe.com%2Fproducts%2Fsku%2Fimages%2FMidnight.jpg&w=828&q=75",
+  "https://img.freepik.com/premium-psd/psd-fast-food-burger-best-deals-nomlet-design-social-media-instagram-post-template_534119-3330.jpg",
+  "https://assets.indolj.io/upload/1751377987-crispy%20deals.webp"
 ];
 
 var index = 0;
-var cake = document.getElementById("cake");
+var burger = document.getElementById("burger");
 
-function next(){
-    if(index == cakes.length - 1){
+function next() {
+    if (index == burgers.length - 1) {
         index = 0;
     } else {
         index++;
     }
-    cake.src = cakes[index];
+    burger.src = burgers[index];
 }
 
-function previous(){
-    if(index == 0){
-        index = cakes.length - 1;
+function previous() {
+    if (index == 0) {
+        index = burgers.length - 1;
     } else {
         index--;
     }
-    cake.src = cakes[index];
+    burger.src = burgers[index];
 }

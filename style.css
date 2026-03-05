@@ -7,12 +7,14 @@
     align-items:center;
     height:100vh;
     font-family:Arial;
+      background-image: url("https://www.shutterstock.com/image-vector/red-hamburger-background-seamless-pattern-600nw-2646420413.jpg");
 }
 
 .container{
     display:flex;
     align-items:center;
     gap:20px;
+  
 }
 
 img{
